@@ -1,6 +1,6 @@
 package Model;
 
-public class StackUsingDoubleLinkedList<T> implements IStack<T>{
+public class StackUsingDoubleLinkedList<T> extends AbstractStack<T>{
     private DoubleLinkedList<T> listaInterna;
 
     public StackUsingDoubleLinkedList() {

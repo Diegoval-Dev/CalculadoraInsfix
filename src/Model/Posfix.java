@@ -62,7 +62,8 @@ public class Posfix implements IPostfixCalculator{
     @Override
     public int calculate(String line, String stackType) {
         Posfix calculadora = Posfix.getPosfixInstance();
-        StackUsingArrayList<Integer> stack = new Factory().;
+        Factroy fc = new Factroy();
+        AbstractStack<Integer> stack = fc.getInstance(stackType);
         ArrayList<String> calculo = new ArrayList<>();
         String caracter;
         int resultado = 0;

@@ -2,7 +2,7 @@ package Model;
 
 import java.util.Vector;
 
-public class StackUsingVector<T> implements IStack<T>{
+public class StackUsingVector<T> extends AbstractStack<T>{
     private Vector<T> listaInterna;
 
     public StackUsingVector() {
