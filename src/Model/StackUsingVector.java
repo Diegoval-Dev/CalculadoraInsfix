@@ -5,8 +5,8 @@ import java.util.Vector;
 public class StackUsingVector<T> implements IStack<T>{
     private Vector<T> listaInterna;
 
-    public StackUsingVector(Vector<T> listaInterna) {
-        this.listaInterna = listaInterna;
+    public StackUsingVector() {
+        listaInterna = new Vector<T>();
     }
 
     @Override
