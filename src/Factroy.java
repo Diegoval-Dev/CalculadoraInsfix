@@ -1,7 +1,4 @@
-import Model.IStack;
-import Model.StackUsingArrayList;
-import Model.StackUsingLinkedList;
-import Model.StackUsingVector;
+import Model.*;
 import structure.*;
 import structure5.AbstractList;
 
@@ -10,17 +7,14 @@ public class Factroy {
         switch (wichStack){
             case "ArrayList":
                 return new StackUsingArrayList<Integer>();
-                break;
             case "Vector":
                 return new StackUsingVector<Integer>();
-                break;
             case "SimpleList":
                 return new StackUsingLinkedList<Integer>();
-                break;
             case "DoubleList":
-                break;
+                return new StackUsingDoubleLinkedList<Integer>();
             default:
-                break;
+                return null;
         }
     }
 }
