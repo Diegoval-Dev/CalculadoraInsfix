@@ -1,6 +1,6 @@
 package Model;
 
-public class SingleLinkedList<T> extends AbstractStack<T>{
+public class SingleLinkedList<T> extends AbstractList<T>{
     private int count;
     private Node<T> start;
     private Node<T> end;

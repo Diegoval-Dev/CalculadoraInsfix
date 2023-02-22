@@ -2,7 +2,7 @@ package Model;
 
 import java.util.ArrayList;
 
-public class StackUsingArrayList<T> implements IStack<T>{
+public class StackUsingArrayList<T> extends AbstractStack<T>{
     private ArrayList<T> miListaInterna;
 
     public StackUsingArrayList() {

@@ -1,6 +1,6 @@
 package Model;
 
-public class DoubleLinkedList<T> implements IList<T>{
+public class DoubleLinkedList<T> extends AbstractList<T>{
     private DoubleNode<T> start;
     private DoubleNode<T> end;
     private int count;
