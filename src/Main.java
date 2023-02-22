@@ -6,7 +6,10 @@ import Model.UI;
 import java.util.ArrayList;
 
 public class Main {
-
+    /**
+     * Metodo main
+     * @param args saber
+     */
     public static void main(String[] args) {
         UI ui = new UI();
         Posfix calculadora = Posfix.getPosfixInstance();
@@ -25,6 +28,11 @@ public class Main {
         }
 
     }
+
+    /**
+     * Menu
+     * @return opcion de stack a usar
+     */
     public static String menu(){
         UI ui = new UI();
         ui.print("INGRESE EL NUMERO DEL STACK QUE DESEA UTILIZAR");

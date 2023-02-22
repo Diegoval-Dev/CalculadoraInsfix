@@ -5,6 +5,11 @@ import structure.*;
 import structure5.AbstractList;
 
 public class Factroy {
+    /**
+     * Devuelve el stack del tipo solicitado
+     * @param wichStack cual stack se necesita
+     * @return
+     */
     public AbstractStack<Integer> getInstance(String wichStack){
         switch (wichStack){
             case "ArrayList":

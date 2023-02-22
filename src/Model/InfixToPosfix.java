@@ -3,6 +3,11 @@ package Model;
 import java.util.Stack;
 
 public class InfixToPosfix {
+    /**
+     * convierte una expresion infix a posfix
+     * @param infix cadena en infix
+     * @return cadena en posfix
+     */
     public static String infixToPostfix(String infix) {
         Stack<Character> stack = new Stack<>();
         StringBuilder postfix = new StringBuilder();
@@ -41,6 +46,11 @@ public class InfixToPosfix {
         return postfix.toString();
     }
 
+    /**
+     * Signos
+     * @param c elemennto
+     * @return numero
+     */
     public static int precedence(char c) {
         switch (c) {
             case '+':

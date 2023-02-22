@@ -4,6 +4,10 @@ public class SingleLinkedList<T> extends AbstractList<T>{
     private int count;
     private Node<T> start;
     private Node<T> end;
+    /**
+     * Insertar al inicio
+     * @param value valor
+     */
     @Override
     public void InsertAtStart(T value) {
         Node<T> newNode = new Node<T>(value);
@@ -20,7 +24,10 @@ public class SingleLinkedList<T> extends AbstractList<T>{
         }
         count++;
     }
-
+    /**
+     * Insertar al final
+     * @param value valor
+     */
     @Override
     public void InsertAtEnd(T value) {
         Node<T> newNode = new Node<T>(value);
@@ -36,7 +43,11 @@ public class SingleLinkedList<T> extends AbstractList<T>{
 
         count++;
     }
-
+    /**
+     * Insertar en un punto
+     * @param value valor
+     * @param index indice
+     */
     @Override
     public void Insert(T value, int index) {
 
@@ -75,7 +86,11 @@ public class SingleLinkedList<T> extends AbstractList<T>{
             }
         }
     }
-
+    /**
+     * Eliminar de un indice
+     * @param index indice
+     * @return null
+     */
     @Override
     public T Delete(int index) {
         if (index == 0)
@@ -110,7 +125,10 @@ public class SingleLinkedList<T> extends AbstractList<T>{
             return null;
         }
     }
-
+    /**
+     * Eliminar al inicio
+     * @return se elimino
+     */
     @Override
     public T DeleteAtStart() {
         if (!IsEmpty())
@@ -123,7 +141,10 @@ public class SingleLinkedList<T> extends AbstractList<T>{
 
         return null;
     }
-
+    /**
+     * Eliminar al final
+     * @return final
+     */
     @Override
     public T DeleteAtEnd() {
         if (!IsEmpty())
@@ -160,7 +181,11 @@ public class SingleLinkedList<T> extends AbstractList<T>{
 
         return null;
     }
-
+    /**
+     * Obtener un elemento de un indice
+     * @param index indice
+     * @return elemento
+     */
     @Override
     public T Get(int index) {
         if (!IsEmpty())
@@ -200,12 +225,18 @@ public class SingleLinkedList<T> extends AbstractList<T>{
 
         return null;
     }
-
+    /**
+     * Saber si la lista esta vacia
+     * @return si esta vacio o no
+     */
     @Override
     public boolean IsEmpty() {
         return count == 0;
     }
-
+    /**
+     * Saber la cantidad de elementos de la lista
+     * @return cantidad de elementos
+     */
     @Override
     public int Count() {
         return count;
