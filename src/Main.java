@@ -9,7 +9,6 @@ public class Main {
 
     public static void main(String[] args) {
         UI ui = new UI();
-        InfixToPosfix inf = new InfixToPosfix();
         Posfix calculadora = Posfix.getPosfixInstance();
         ui.print("Ingrese la Url de los documentos a leer");
         ReadFile rd = new ReadFile(ui.read());
@@ -20,7 +19,7 @@ public class Main {
         int resultado = 0;
 
         for (int i = 0; i < cantLineas; i++) {
-            String posfixLine = inf.infixToPostfix(arrayDatos.get(i));
+            String posfixLine = InfixToPosfix.infixToPostfix(arrayDatos.get(i));
             resultado = calculadora.calculate(posfixLine,StackOp);
             ui.print("Linea: "+arrayDatos.get(i) + " Resultado: " + resultado);
         }
