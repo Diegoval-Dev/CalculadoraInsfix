@@ -1,6 +1,5 @@
 package Model;
 
-import java.lang.invoke.ClassSpecializer;
 import java.util.ArrayList;
 
 public class Posfix implements IPostfixCalculator{
@@ -101,4 +100,5 @@ public class Posfix implements IPostfixCalculator{
         }
         return stack.pull();
     }
+
 }

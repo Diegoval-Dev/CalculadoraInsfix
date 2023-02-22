@@ -9,8 +9,12 @@ public class ReadFile {
     //URL DEL ARCHIVO A LEER, FAVOR DE MODIFICAR ANTES DE USAR.
     //D:\EstructuraDeDatosUVG\CalculadoraPosfix\src\FileTXT\example1.txt
     //C:\JAVAUVG\CalculadoraPosfix\src\FileTXT\example1.txt
-    public String fileURL = "D:\\EstructuraDeDatosUVG\\CalculadoraPosfix\\src\\FileTXT\\example1.txt";
+    public String fileURL;
     public ArrayList<String> postFixExpresion = new ArrayList<>();
+
+    public ReadFile(String fileURL) {
+        this.fileURL = fileURL;
+    }
 
     /**
      * Funcion para leer el documento de texto

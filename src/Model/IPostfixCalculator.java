@@ -10,5 +10,5 @@ public interface IPostfixCalculator {
     int division(int a, int b);
     boolean isOperator(String item);
     ArrayList<String> getItems(String expresion);
-    int calculate(String line);
+    int calculate(String line,String type);
 }
